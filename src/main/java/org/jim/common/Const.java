@@ -11,7 +11,7 @@ public interface Const
 	
 	public static final int SERVER_PORT = 9999;
 	
-	public static final String CHARSET = "utf-8";
+	public static final String CHARSET = "UTF-8";
 	
 	public static final String TO = "to";
 	
