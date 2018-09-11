@@ -11,8 +11,7 @@ import org.jim.common.packets.Command;
  * @author wchao 
  *
  */
-public class CommandStat
-{
+public class CommandStat{
 
 	public final static Map<Command, CommandStat> commandAndCount = new ConcurrentHashMap<>();
 	
