@@ -39,7 +39,7 @@ public class ImKit {
 		 *
 	 */
 	public static ImPacket ConvertRespPacket(RespBody respBody, ChannelContext channelContext){
-		logger.info("响应消息内容为------>"+respBody.getMsg()+"用户ID-["+channelContext.getId()+"]");
+		logger.info("响应消息内容为------> "+respBody.getMsg() + " , 用户ID-["+channelContext.getUserid()+"]");
 		
 		ImPacket respPacket = null;
 		if(respBody == null)
