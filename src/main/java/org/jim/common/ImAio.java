@@ -174,7 +174,10 @@ public class ImAio {
 			return;
 		ImPacket rspPacket = ImKit.ConvertRespPacket(packet.getBody(), packet.getCommand(), channelContext);
 		rspPacket.setSynSeq(packet.getSynSeq());
-		Aio.sendToId(channelContext.getGroupContext(), channelContext.getId(), rspPacket);
+		// Aio.sendToId(channelContext.getGroupContext(), channelContext.getId(), rspPacket);
+		// alter by rocky 18-10-17
+		Boolean ret = Aio.sendToId(channelContext.getGroupContext(), channelContext.getId(), rspPacket);
+		log.info("send result: " + ret);
 	}
 	/**
 	 * 发送到指定用户;
